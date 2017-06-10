@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignInVC.swift
 //  MySocial
 //
 //  Created by mahmoud gamal on 6/10/17.
