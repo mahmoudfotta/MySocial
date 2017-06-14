@@ -92,7 +92,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NqY-nD-Nkd" customClass="CustomTextField" customModule="MySocial" customModuleProvider="target">
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7Z-rG-Ifa" customClass="CustomBtn" customModule="MySocial" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.8666666666666667" green="0.17254901960784313" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
@@ -100,6 +100,9 @@
                                         <state key="normal" title="Sign in">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I8N-3b-6iw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -137,6 +140,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="r5J-mm-fub" id="4tx-hh-BIU"/>
+                        <outlet property="passwdField" destination="NqY-nD-Nkd" id="7Lr-gz-9fR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
