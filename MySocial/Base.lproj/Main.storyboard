@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSU-RH-h4E" customClass="CustomView" customModule="MySocial" customModuleProvider="target">
@@ -31,7 +31,7 @@
                                 <constraints>
                                     <constraint firstItem="Yld-EV-hyP" firstAttribute="centerY" secondItem="qSU-RH-h4E" secondAttribute="centerY" id="7b8-ip-p0K"/>
                                     <constraint firstItem="Yld-EV-hyP" firstAttribute="centerX" secondItem="qSU-RH-h4E" secondAttribute="centerX" id="845-AQ-xbR"/>
-                                    <constraint firstAttribute="height" constant="150" id="VOK-lD-TWW"/>
+                                    <constraint firstAttribute="height" constant="130" id="VOK-lD-TWW"/>
                                     <constraint firstAttribute="height" constant="200" id="oE3-aS-gMx"/>
                                 </constraints>
                                 <variation key="default">
@@ -56,7 +56,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.51372549019607838" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="4Eg-hg-kNS"/>
+                                    <constraint firstAttribute="height" constant="60" id="4Eg-hg-kNS"/>
                                     <constraint firstItem="Ugm-uI-Bxc" firstAttribute="top" secondItem="VDx-6W-R6K" secondAttribute="top" constant="8" id="JLB-eU-q5D"/>
                                     <constraint firstAttribute="trailing" secondItem="Ugm-uI-Bxc" secondAttribute="trailing" constant="8" id="M3C-g6-Fvn"/>
                                     <constraint firstItem="Ugm-uI-Bxc" firstAttribute="leading" secondItem="VDx-6W-R6K" secondAttribute="leading" constant="8" id="Vs2-ku-tjT"/>
@@ -74,14 +74,17 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9R-Qh-cfb" customClass="RoundBtn" customModule="MySocial" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.36078431372549019" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="F6R-ov-Bem"/>
-                                    <constraint firstAttribute="width" constant="150" id="jAo-vf-qlY"/>
+                                    <constraint firstAttribute="height" constant="110" id="F6R-ov-Bem"/>
+                                    <constraint firstAttribute="width" constant="110" id="jAo-vf-qlY"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="fbBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2Y-Pn-afq"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u7b-fg-ayJ">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u7b-fg-ayJ">
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5J-mm-fub" customClass="CustomTextField" customModule="MySocial" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5J-mm-fub" customClass="CustomTextField" customModule="MySocial" customModuleProvider="target">
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -106,7 +109,7 @@
                             <constraint firstItem="nc4-gS-nOC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FMP-ud-xjQ"/>
                             <constraint firstItem="U9R-Qh-cfb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LDB-k9-dQF"/>
                             <constraint firstItem="VDx-6W-R6K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nrn-I7-DfP"/>
-                            <constraint firstItem="U9R-Qh-cfb" firstAttribute="top" secondItem="nc4-gS-nOC" secondAttribute="bottom" constant="40" id="PW9-GN-ecg"/>
+                            <constraint firstItem="U9R-Qh-cfb" firstAttribute="top" secondItem="nc4-gS-nOC" secondAttribute="bottom" constant="20" id="PW9-GN-ecg"/>
                             <constraint firstAttribute="trailing" secondItem="VDx-6W-R6K" secondAttribute="trailing" id="QsF-bP-0iH"/>
                             <constraint firstItem="qSU-RH-h4E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RhM-vn-re6"/>
                             <constraint firstItem="u7b-fg-ayJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TLg-8W-ZNb"/>
@@ -128,9 +131,9 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="constraints">
+                                <exclude reference="v1j-La-2jx"/>
                                 <exclude reference="smF-L8-xoR"/>
                                 <include reference="yEl-Y5-FNr"/>
-                                <exclude reference="v1j-La-2jx"/>
                             </mask>
                         </variation>
                     </view>
