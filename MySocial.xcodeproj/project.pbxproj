@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0FE8751EF1ADAB0012FB96 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FE8741EF1ADAA0012FB96 /* FeedVC.swift */; };
+		2A2635FA1EF47A1F0094A4CE /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2635F91EF47A1F0094A4CE /* CircleImageView.swift */; };
+		2A2635FC1EF48E890094A4CE /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2635FB1EF48E890094A4CE /* PostCell.swift */; };
+		2A3888EB1EF5669900F67FD3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3888EA1EF5669900F67FD3 /* DataService.swift */; };
 		2A8539521EEC179A003F1CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8539511EEC179A003F1CBA /* AppDelegate.swift */; };
 		2A8539541EEC179A003F1CBA /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8539531EEC179A003F1CBA /* SignInVC.swift */; };
 		2A8539571EEC179A003F1CBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8539551EEC179A003F1CBA /* Main.storyboard */; };
@@ -23,6 +27,11 @@
 
 /* Begin PBXFileReference section */
 		27029B5C12ADF0E4BE2EE162 /* Pods_MySocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0FE8741EF1ADAA0012FB96 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		2A2635F81EF43B610094A4CE /* MySocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySocial.entitlements; sourceTree = "<group>"; };
+		2A2635F91EF47A1F0094A4CE /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		2A2635FB1EF48E890094A4CE /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		2A3888EA1EF5669900F67FD3 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		2A85394E1EEC179A003F1CBA /* MySocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8539511EEC179A003F1CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A8539531EEC179A003F1CBA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -52,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A3888E91EF5667400F67FD3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2A3888EA1EF5669900F67FD3 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		2A8539451EEC1799003F1CBA = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +90,8 @@
 		2A8539501EEC179A003F1CBA /* MySocial */ = {
 			isa = PBXGroup;
 			children = (
+				2A3888E91EF5667400F67FD3 /* Services */,
+				2A2635F81EF43B610094A4CE /* MySocial.entitlements */,
 				2A85396A1EEC5208003F1CBA /* Util */,
 				2A8539651EEC1D64003F1CBA /* Model */,
 				2A8539671EEC1D79003F1CBA /* Controller */,
@@ -101,6 +120,8 @@
 				2A85396D1EEC5517003F1CBA /* RoundBtn.swift */,
 				2A85396F1EEC57FB003F1CBA /* CustomTextField.swift */,
 				2A8539711EEC5B9E003F1CBA /* CustomBtn.swift */,
+				2A2635F91EF47A1F0094A4CE /* CircleImageView.swift */,
+				2A2635FB1EF48E890094A4CE /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -109,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				2A8539531EEC179A003F1CBA /* SignInVC.swift */,
+				2A0FE8741EF1ADAA0012FB96 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -173,7 +195,13 @@
 				TargetAttributes = {
 					2A85394D1EEC179A003F1CBA = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AJEW2MYDQH;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -263,12 +291,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8539691EEC50E6003F1CBA /* CustomView.swift in Sources */,
+				2A2635FA1EF47A1F0094A4CE /* CircleImageView.swift in Sources */,
 				2A85396E1EEC5517003F1CBA /* RoundBtn.swift in Sources */,
 				2A8539701EEC57FB003F1CBA /* CustomTextField.swift in Sources */,
 				2A8539721EEC5B9E003F1CBA /* CustomBtn.swift in Sources */,
+				2A3888EB1EF5669900F67FD3 /* DataService.swift in Sources */,
+				2A0FE8751EF1ADAB0012FB96 /* FeedVC.swift in Sources */,
 				2A8539541EEC179A003F1CBA /* SignInVC.swift in Sources */,
 				2A8539521EEC179A003F1CBA /* AppDelegate.swift in Sources */,
 				2A85396C1EEC521B003F1CBA /* Constants.swift in Sources */,
+				2A2635FC1EF48E890094A4CE /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +424,8 @@
 			baseConfigurationReference = AA43BBE80217DCE0AA4A1926 /* Pods-MySocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySocial/MySocial.entitlements;
+				DEVELOPMENT_TEAM = AJEW2MYDQH;
 				INFOPLIST_FILE = MySocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fotta.MySocial;
@@ -405,6 +439,8 @@
 			baseConfigurationReference = 30B3CCD8E2637790EB279E11 /* Pods-MySocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySocial/MySocial.entitlements;
+				DEVELOPMENT_TEAM = AJEW2MYDQH;
 				INFOPLIST_FILE = MySocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fotta.MySocial;
