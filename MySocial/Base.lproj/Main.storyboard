@@ -181,12 +181,16 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oa1-0f-EJd">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-z4-6YX" customClass="CircleImageView" customModule="MySocial" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-z4-6YX" customClass="CircleImageView" customModule="MySocial" customModuleProvider="target">
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="Jrl-p2-dap"/>
                                                     <constraint firstAttribute="width" constant="49" id="aeC-GV-pXt"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="JS6-hK-fgl" appends="YES" id="C27-OS-RWq"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="M3x-HM-S6w" customClass="CustomTextField" customModule="MySocial" customModuleProvider="target">
                                                 <nil key="textColor"/>
@@ -335,6 +339,7 @@
                     </view>
                     <connections>
                         <outlet property="feedTable" destination="GoF-NT-HXa" id="qMi-L7-Vlc"/>
+                        <outlet property="imageAdd" destination="2vU-z4-6YX" id="77Q-bU-ZBH"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="L8n-9W-dYN"/>
                     </connections>
                 </viewController>
@@ -342,6 +347,11 @@
                 <tapGestureRecognizer id="X4K-04-R3u">
                     <connections>
                         <action selector="signoutTapped:" destination="qKT-dP-aEq" id="78a-b2-VqW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JS6-hK-fgl">
+                    <connections>
+                        <action selector="addImageTapped:" destination="qKT-dP-aEq" id="Xli-Wv-hZM"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

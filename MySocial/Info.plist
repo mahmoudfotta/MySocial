@@ -34,38 +34,32 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb433048233728843</string>
-            </array>
-        </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>433048233728843</string>
-    <key>FacebookDisplayName</key>
-    <string>MySocial</string>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb433048233728843</string>
-            </array>
-        </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>433048233728843</string>
-    <key>FacebookDisplayName</key>
-    <string>MySocial</string>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>fbapi</string>
-        <string>fb-messenger-api</string>
-        <string>fbauth2</string>
-        <string>fbshareextension</string>
-    </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb433048233728843</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>433048233728843</string>
+	<key>FacebookDisplayName</key>
+	<string>MySocial</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Needs access to photo for posting</string>
 </dict>
 </plist>
